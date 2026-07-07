@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Myanmar City Explorer - a professional Leaflet GIS portfolio project for exploring Myanmar cities.">
+  <title>Myanmar City Explorer</title>
+
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.83.1/dist/L.Control.Locate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="loading" class="loading" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <p>Loading Myanmar cities...</p>
+  </div>
+
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Leaflet GIS Portfolio</p>
+      <h1>Myanmar City Explorer</h1>
+    </div>
+    <p class="header-meta">Cities, boundary, search, locate, measure</p>
+  </header>
+
+  <main>
+    <div id="map" aria-label="Interactive map of Myanmar cities"></div>
+  </main>
+
+  <template id="popup-template">
+    <article class="city-popup">
+      <div class="popup-icon" aria-hidden="true">⌖</div>
+      <div>
+        <h2></h2>
+        <dl>
+          <div><dt>Country</dt><dd data-country></dd></div>
+          <div><dt>Latitude</dt><dd data-latitude></dd></div>
+          <div><dt>Longitude</dt><dd data-longitude></dd></div>
+        </dl>
+      </div>
+    </article>
+  </template>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.83.1/dist/L.Control.Locate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
