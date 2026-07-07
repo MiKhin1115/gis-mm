@@ -70,24 +70,6 @@ data/myanmar.geojson
 
 The included boundary uses geoBoundaries gbOpen Myanmar ADM0 GeoJSON, sourced from OpenStreetMap and represented for 2021. Review licensing and suitability before using it for formal GIS analysis.
 
-## Deploy on GitHub Pages
-
-1. Push this project to a GitHub repository.
-2. Open the repository settings.
-3. Go to **Pages**.
-4. Choose the branch that contains `index.html`, usually `main`.
-5. Select the root folder and save.
-6. Open the published GitHub Pages URL.
-
-No build step, Node.js, npm, or server-side code is required.
-
-## Screenshots
-
-Add screenshots here after deployment:
-
-```md
-![Myanmar City Explorer screenshot](assets/screenshot.png)
-```
 
 ## Future Improvements
 
